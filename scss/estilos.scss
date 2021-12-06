@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Kalam', cursive;
+}
+
+.tituloGrande{	
+	font-size: 2em;
+	text-align: center; 
+	@media (min-width: 992px) {	   	
+			font-size: 3em;     
+	}	
+}
+
+/**Navbar**/
+
+.logo{
+	width: 150px;
+	height: auto;
+}
+
+.navbar-nav{
+	font-size: 1.5em;
+	li{
+		padding: 8px;
+	}	
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
+	font-size: 1em;
+    &:hover{
+		color: pink;
+	}
+}
+
+.bannerHome{
+   background-image: url(../media/front-view-of-chocolate-cake-on-stand.jpg); 
+   background-size: cover;
+   background-position: center;  
+}
+
+/**Footer**/
+
+footer{
+    color: white;
+    background-color: black;
+  }
+  

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cheesecake",
+        "precio": 3500,
+        "imagen": "../media/cheesecake.jpg",
+        "info": "Base de galletitas húmedas, riquísima y esponjosa crema de queso, coronada con frutillas y salsa de frutos rojos."
+    },
+    {
+        "id": 2,
+        "nombre": "Lemonpie",
+        "precio": 2200,
+        "imagen": "../media/lemonpie.jpg",
+        "info": "Masa suave, sablée con crema de limón, y merengue para el toque final."
+    },
+    {
+        "id": 3,
+        "nombre": "Torta brownie",
+        "precio": 2200,
+        "imagen": "../media/brownie.jpg",
+        "info": "Una bomba. Base de brownie con nueces, dulce de leche, y merengue."
+    },
+    {
+        "id": 4,
+        "nombre": "Carrotcake",
+        "precio": 3000,
+        "imagen": "../media/carrotcake.jpg",
+        "info": "Una torta húmeda y fresca a base de zanahorias saborizadas con canela y jengibre, rellena de una crema de queso y naranja."
+    },
+    {
+        "id": 5,
+        "nombre": "Torta manzana",
+        "precio": 2200,
+        "imagen": "../media/manzana.jpg",
+        "info": "Clasico bizcochuelo de vainilla con trozos de manzana que le dan una humedad y sabor especial."
+    },
+    {
+        "id": 6,
+        "nombre": "Red velvet",
+        "precio": 2500,
+        "imagen": "../media/redvelvet.jpg",
+        "info": "Este clásico bizcochuelo escarlata sorprende por su color y sabores. Rellena de crema de leche y queso."
+    },   
+    {
+        "id": 7,
+        "nombre": "Marquise",
+        "precio": 2200,
+        "imagen": "../media/marquise.jpg",
+        "info": "Base de chocolate liviana, sin harina con dulce de leche, crema y cubierta con chocolate amargo rallado."
+    },
+    {
+        "id": 8,
+        "nombre": "Rogel",
+        "precio": 3500,
+        "imagen": "../media/rogel.jpg",
+        "info": "Contiene sucesivas galletas neutras alternando con abundante dulce de leche, cubierto por una capa de merengue."
+    }, 
+    {
+        "id": 9,
+        "nombre": "Torta oreo",
+        "precio": 2800,
+        "imagen": "../media/oreo.jpg",
+        "info": "Bizcochuelo de chocolate con relleno de crema de oreos, cubierto por ganache de chocolate y trozos de galletita oreo."
+    }           
+]

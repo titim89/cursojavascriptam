@@ -7,62 +7,60 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/contacto.js"></script>
 </head>
 <body>
-    <main class="container-fluid px-0">
-        <div class="bannerHome vh-100">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="media/logo4.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tienda">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    </ul>
+    <main id="principal" class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                  <a class="nav-link px-3" href="#about">Nosotros</a>
+                  <a class="nav-link px-3" href="#tortas">Tortas</a>
+                  <a class="nav-link px-3" href="#cuenta">Cuenta</a>
                 </div>
-            </nav>
+                <div class="submenu ml-auto">
+                    <a class="btnIconoCarrito" href="#">
+                        <img class="imgCarrito" src="media/carrito.png" alt="imagen carrito">
+                    </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="bannerHome">
+
         </div>
-        <div id="tienda">
-			<p class="tituloGrande mt-5">Conoce nuestra tienda</p>
-		</div>
-		<div class="card-deck d-flex flex-column flex-md-row align-content-center textoGeneral py-5">
-			<div class="card">
-				<img src="media/torta.jpg" class="card-img-top rounded" loading="lazy" alt="">
-				<div class="card-body">
-					<p class="card-title">Tortas</p>
-                    <p>Rogel: $3000<br>torta brownie: $2500<br>Chocotorta: $2800</p>
-					<a href="curso.html" class="btn btn-dark">Mas informacion</a>
-				</div>
-			</div>
-			<div class="card">
-				<img src="media/cupcake.jpg" class="card-img-top rounded" loading="lazy" alt="">
-				<div class="card-body">
-					<p class="card-title">Cupcakes</p>
-                    <p>Cupcake chocolate: $500<br>Cupcake vainilla con dulce de leche: $550</p>
-					<a href="experiencias.html" class="btn btn-dark">Mas informacion</a>
-				</div>
-			</div>	
-			<div class="card">
-				<img src="media/cuadrados.jpg" class="card-img-top rounded" loading="lazy" alt="">
-				<div class="card-body">
-					<p class="card-title">Cuadraditos</p>
-                    <p>Brownie: $250<br>Lemonies: $250<br>Coco y duce de leche:$300</p>
-					<a href="asesoria.html" class="btn btn-dark">Mas informacion</a>
-				</div>
-			</div>
-		</div>
+        <div class="d-flex row">
+            <div class="container-fluid">
+                <div id="about" class="container-fluid">
+                    <p class="tituloGrande mt-5">Nosotros</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center text-center intro vh-50">
+                    <p>En Bakery queremos ofrecerte nuestra mejor pasteleria casera, con recetas tradicionales y familiares, utilizando siempre productos de primera calidad.</p>
+                </div>
+                <div id="tortas" class="pb-3">
+                    <p class="tituloGrande mt-5">Nuestras tortas</p>
+                </div>
+                <div class="container py-3">                    
+                  <div id="cardProductos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 px-4">
+            
+                    </div>
+                    <div class="sidebar">
+                        <h2 class="tituloCarrito">CARRITO</h2>
+                        <button class="cerrarCarrito">></button>
+                        <div class="listaCarrito"></div>
+                        <p id="mostrarTotal" class="totalCarrito">TOTAL: <span></span></p>
+                        <button class="btnVaciar" type="button" onClick="vaciarCarrito()" >VACIAR CARRITO</button>
+                        <button class="btnFinalizar" type="button" onClick="seguirFormulario()">FINALIZAR COMPRA</button>                       
+                    </div>
+                </div>             
+            </div>                    
+        </div>  
     </main>
     <footer class="text-center">
         <div class="container p-4 pb-0">
@@ -92,7 +90,8 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 body {
-  font-family: 'Kalam', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 .tituloGrande {
@@ -10,37 +10,214 @@ body {
 
 @media (min-width: 992px) {
   .tituloGrande {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 }
 
-/**Navbar**/
-.logo {
-  width: 150px;
-  height: auto;
-}
+/**Home**/
 
+.navbar{
+  background-color: white;
+}
 .navbar-nav {
   font-size: 1.5em;
 }
 
-.navbar-nav li {
+.navbar-nav div {
   padding: 8px;
 }
 
+.submenu img {
+  width: 50px;
+  height: auto;
+}
+
 .navbar-light .navbar-nav .nav-link {
-  color: aliceblue;
+  color: black;
   font-size: 1em;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: pink;
+  color: gray;
 }
 
 .bannerHome {
-  background-image: url(../media/front-view-of-chocolate-cake-on-stand.jpg);
+  height: 70vh;
+  width: auto;
+  background-image: url(../media/miproyecto.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#about {
+  background-image: url(../media/57.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 12vh;
+  width: auto;
+}
+
+#tortas {
+  background-image: url(../media/57.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 12vh;
+  width: auto;
+}
+
+.card {
+  border: none;
+}
+
+.card .btnComprar {
+  text-decoration: none;
+  color: white;
+  background-color: #df8fbd;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card .card-img-top {
+  width: 100%;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+.intro p {
+  font-size: 2em;
+  padding-right: 250px;
+  padding-left: 250px;
+  padding-top: 20px;
+}
+
+/**Carrito**/
+.sidebar {
+  background-color: white;
+  position: fixed;
+  height: 80%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  right: 0;
+  top: 10%;
+  z-index: 1;
+  width: 300px;
+  border: 1px solid #e95fcb;
+}
+
+.tituloCarrito {
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.listaCarrito {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 60px;
+}
+
+.listaCarrito p{
+  margin-top: 20px;
+}
+
+.listaCarrito h3{
+  font-size: 20px;
+}
+
+.btnCarrito {
+  color: white;
+  background-color: #df8fbd;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  margin-left: 1rem;
+}
+
+.btnCarrito:hover{
+  font-weight: bold;
+  background-color: #004643;
+  border: none;
+  transition: 0.1s ease-in;
+} 
+
+.btnFinalizar {
+  border: none;
+  background-color: #df8fbd;
+  width: 300px;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  bottom: 30px;
+}
+.btnFinalizar:hover {
+  background-color: #004643;
+  border: none;
+}
+
+.btnVaciar{
+  border: none;
+  background-color: #681548;
+  width: 300px;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  bottom: 70px;
+  padding: 10px;
+}
+
+.btnVaciar:hover {
+  background-color: #004643;
+  border: none;
+}
+
+.totalCarrito {
+  position: fixed;
+  bottom: 85px;
+  width: 300px;
+  height: 50px;
+  font-size: 19px;
+  background-color: white;
+  color: #e95fcb;
+  padding: 12px;
+}
+
+.imagenCarrito {
+  width: 50%;
+}
+
+.seccionContactoItems{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+
+.contactButton {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #df8fbd;
+  border: none;
+  border-radius: 3px;
+}
+
+.mensajeFinal {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 20px;
+  
 }
 
 /**Footer**/
@@ -48,4 +225,3 @@ footer {
   color: white;
   background-color: black;
 }
-/*# sourceMappingURL=estilos.css.map */
